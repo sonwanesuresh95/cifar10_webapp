@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CIFAR10 Image Classification</title>
+</head>
+<body>
+<center>
+<h1>CIFAR-10 Image classification API</h1>
+<p>Select Image and upload</p>
+<p><form action='/prd' method='POST'>
+    Select Image:<br>
+<table>
+<tr>
+    <td>
+        <img src="static/test_images/airplane.png" width="100" height="100">
+    </td>
+    <td>
+        <img src="static/test_images/automobile.png" width="100" height="100">
+    </td>
+    <td>
+        <img src="static/test_images/bird.png" width="100" height="100">
+    </td>
+    <td>
+        <img src="static/test_images/cat.png" width="100" height="100">
+    </td>
+    <td>
+        <img src="static/test_images/deer.png" width="100" height="100">
+    </td>
+    <td>
+        <img src="static/test_images/dog.png" width="100" height="100">
+    </td>
+    <td>
+        <img src="static/test_images/horse.png" width="100" height="100">
+    </td>
+</tr>
+<tr>
+    <td align="center">
+        <input type="radio" name="image" value="airplane.png" ></td>
+    <td align="center">
+        <input type="radio" name="image" value="automobile.png"></td>
+    <td align="center">
+        <input type="radio" name="image" value="bird.png"></td>
+    <td align="center">
+        <input type="radio" name="image" value="cat.png"></td>
+    <td align="center">
+        <input type="radio" name="image" value="deer.png"></td>
+    <td align="center">
+        <input type="radio" name="image" value="dog.png"></td>
+    <td align="center">
+        <input type="radio" name="image" value="horse.png">
+    </td>
+</tr>
+</table>
+  <br> <input type="submit">
+</form>
+<br>
+    <br>
+    Identified category: {{ category }}
+</center>
+</body>
+</html>
